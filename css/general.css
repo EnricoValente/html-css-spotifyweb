@@ -1,0 +1,22 @@
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+:root {
+    --main-color:#141922;
+    --top-color:#080B12;
+    --bottom-color:#282828;
+    --title-color:#696C72;
+}
+
+img {
+    max-width: 100%;
+}
+    
