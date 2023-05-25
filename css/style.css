@@ -16,11 +16,44 @@ body {
 }
 
 
-/* HEADER */
 
+/* NAVBAR */
+.web-app {
+    display: flex;
+    height: 100vh;
+}
 
+.sidebar-menu {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 15.625rem;
+    padding: 1.25rem;
+    background-color:black;
+}
 
+.sidebar-menu .menu {
+    margin: 0 -1.25rem;
+}
 
+.sidebar-menu .menu a {
+    color: var(--title-color);
+    display: block;
+    text-decoration: none;
+    padding-top: .3125rem;
+    padding-left: .625rem;
+    
+}
+
+.menu ul li {
+    font-size: .625rem;
+}
+
+.sidebar-menu .menu h3 {
+    color: white;
+    padding: .625rem;
+
+}
 
 
 
