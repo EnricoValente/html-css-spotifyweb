@@ -173,6 +173,14 @@ button > a {
 /* SECTION 3 */
 
 
+
+
+.all-songs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
 .recently-played {
     margin: 1.25rem;
 }
@@ -188,13 +196,12 @@ button > a {
 }
 
 .recently-songs {
-    width: calc(9.375rem  - 1.25rem);
-    height:calc(9.375rem - 1.25rem);
+    width:calc(9.375rem - 1.25rem);
     margin: 0 .625rem;
     display: inline-block;
     position: relative;
-}
     
+}
     
 
     
@@ -229,7 +236,10 @@ h5 + h6 {
 }
 
 .overlay-1 {
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     transform: scale(0);
     
 }
