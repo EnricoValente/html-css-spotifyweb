@@ -14,44 +14,44 @@
 /* NAVBAR */
 .web-app {
     display: flex;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 80px);
     
 }
 
 .sidebar-menu {
     display: flex;
     flex-direction: column;
-    width: 15.625rem;
-    padding: 1.25rem;
+    width: 250px;
+    padding: 20px;
     background-color:black;
     overflow:hidden;
-    min-height: 25rem;
+    min-height: 400px;
 }
     
 .logo {
-    width: 6.25rem;
+    width: 100px;
 }
 .sidebar-menu .menu {
-    padding: .625rem;
+    padding: 10px;
 }
 
 .sidebar-menu .menu a {
     color: var(--title-color);
     display: block;
     text-decoration: none;
-    padding-top: .3125rem;
-    padding-left: .625rem;
+    padding-top: 5px;
+    padding-left: 10px;
     
 }
 
 .menu ul li {
-    font-size: .625rem;
+    font-size: 10px;
 }
 
 .new-playlist {
     flex-grow: 1;
     overflow: hidden;
-    padding: .625rem;
+    padding: 10px;
 }
 
 
@@ -68,14 +68,14 @@
 
 .sidebar-menu .new-playlist button {
     background-color: var(--title-color);
-    border: .0625rem solid var(--title-color);
+    border: 1px solid var(--title-color);
    
     
     
 }
 
 .sidebar-menu .new-playlist button > a {
-    font-size: 1.875rem;
+    font-size: 30px;
     color: black;
     text-align: center;
 
@@ -89,7 +89,7 @@
 }
 
 .sidebar-menu .new-playlist ul li {
-    padding: .625rem;
+    padding: 10px;
 }
 
 .sidebar-menu .new-playlist ul a {
@@ -103,11 +103,11 @@
 
 /* MAIN */
 main {
-    width:calc(100vw - 15.625rem);
-    height: calc(100vh - 5rem);
-    padding-top: 5rem;
+    width:calc(100vw - 250px);
+    height: calc(100vh - 80px);
+    padding-top: 80px;
     background-color: var(--main-color);
-    overflow: auto;
+    overflow-y: auto;
     
 }
 
@@ -118,7 +118,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    width:calc(100% - 15.625rem);
+    width:calc(100% - 250px);
     z-index: 1;
     
     
@@ -128,19 +128,19 @@ main {
 .button {
     display: flex;
     justify-content: flex-end;
-    padding: 1.25rem;
+    padding: 20px;
 }
 
 .button > button {
     background-color: var(--top-color);
-    border: .0625rem solid white;
-    border-radius: 2.5rem;
+    border: 1px solid white;
+    border-radius: 40px;
 }
 
 button > a {
     color: white;
     text-decoration: none;
-    padding: 1.25rem;
+    padding: 20px;
     font-size: small;
 }
 
@@ -148,7 +148,7 @@ button > a {
 /* SECTION 2 */
 
 .links-list {
-    padding-top: 1.25rem;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -161,7 +161,7 @@ button > a {
 .links-list ul li > a {
     color: var(--title-color);
     text-decoration: none;
-    padding-right: 1.25rem;
+    padding-right: 20px;
 }
 
 .spotify-links .links-list ul li a:hover {
@@ -182,7 +182,7 @@ button > a {
 }
 
 .recently-played {
-    margin: 1.25rem;
+    margin: 20px;
 }
     
     
@@ -192,16 +192,17 @@ button > a {
 
 .recently-played > h2 {
     color: white;
-    padding: .9375rem;
+    padding-bottom: .3125rem;
+    
 }
 
 .recently-songs {
-    width:calc(9.375rem - 1.25rem);
-    margin: 0 .625rem;
-    display: inline-block;
-    position: relative;
-    
+    width:calc(150px - 20px);
+    margin: 0 10px;
 }
+    
+    
+    
     
 
     
@@ -210,8 +211,8 @@ button > a {
 
 .recently-songs > img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
+    
 }
 
 
@@ -247,7 +248,10 @@ h5 + h6 {
     color: white;
 }
 
-.recently-songs:hover .overlay-1 {
+.song-img{
+    position: relative;
+}
+.song-img:hover .overlay-1 {
     transform: scale(1);
 
 }
@@ -257,7 +261,7 @@ h5 + h6 {
 /* SECTION 4 */
 
 .customer-recommended-song {
-    margin:.9375rem;
+    margin:15px;
 }
 
 .customer-recommended-song > h2 {
@@ -266,25 +270,18 @@ h5 + h6 {
 
 .customer-recommended-song > h6 {
     color: var(--title-color);
+    padding: .3125rem;
 }
 
 .recommended-song {
-    width: calc(9.375rem - 1.25rem);
-    height: calc(9.375rem - 1.25rem);
-    margin: .625rem .625rem;
-    display: inline-block;
-    position: relative;
+    width: calc(150px - 20px);
+    margin: 10px 10px;
 } 
+    
+    
+    
 
-.recommended-song > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.recommended-song:hover .overlay-1 {
-    transform: scale(1);
-}
 
 .recommended-song > h5 {
 
@@ -298,34 +295,37 @@ h5 + h6 {
 /* SECTION 5 */
 
 .popular-artists {
-    margin: 1.25rem;
+    margin: 15px;
 }
 
 .popular-artists > h2 {
     color: white;
-    padding-bottom: .625rem;
+    
 }
 
 .popular-artists > h6 {
     color: var(--title-color);
-    padding: .625rem;
+    padding: 5px;
     
 }
 
 .artist {
-    width: calc(9.375rem - 1.25rem);
-    height: calc(9.375rem - 1.25rem);
-    margin: .625rem .625rem;
-    display: inline-block;
-    position: relative;
+    width: calc(150px - 20px);
+    margin: 10px 10px;
+} 
+    
+   
+
+.artist > h5 {
+    color: white;
+    text-align: center;
 }
 
-.artist > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+
+.circle-img {
+     border-radius: 50%;
 }
+    
 
 .img-overlay-2 {
     position: absolute;
@@ -345,13 +345,13 @@ h5 + h6 {
     color: white;
 }
 
-.artist:hover .overlay-2 {
+.song-img:hover .overlay-2 {
     transform: scale(1);
 
 }
 
 footer {
-    height: 5rem;
+    height: 80px;
     
     background-color: var(--bottom-color);
 }
@@ -363,15 +363,15 @@ footer {
 }
 
 .favourite-song {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 30px;
+    height: 30px;
     display: inline-block;
 
 }
 
 .favourite-song {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 30px;
+    height: 30px;
     object-fit: cover;
 
 
@@ -445,7 +445,7 @@ footer {
 
 
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:68.75rem) {
 
     .links-list {
         display: flex;
@@ -454,19 +454,19 @@ footer {
 
    
     .recently-played {
-        margin-top: 3.125rem;
+        margin-top: 50px;
     }
 
 }
 
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:43.75rem) {
 
 }
 
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:37.5rem) {
 
 }
