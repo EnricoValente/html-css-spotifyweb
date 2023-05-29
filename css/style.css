@@ -19,16 +19,20 @@
 }
 
 .sidebar-menu {
-    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
     width: 15.625rem;
     padding: 1.25rem;
     background-color:black;
-    overflow-y: auto;
+    overflow:hidden;
+    min-height: 25rem;
 }
     
-
+.logo {
+    width: 6.25rem;
+}
 .sidebar-menu .menu {
-    margin: 0 -1.25rem;
+    padding: .625rem;
 }
 
 .sidebar-menu .menu a {
@@ -44,9 +48,53 @@
     font-size: .625rem;
 }
 
-.sidebar-menu .menu h3 {
-    color: white;
+.new-playlist {
+    flex-grow: 1;
+    overflow: hidden;
     padding: .625rem;
+}
+
+
+.new-playlist ul {
+    overflow-y: auto;
+    height: 80%;
+}
+
+.sidebar-menu .new-playlist h3 {
+    color: white;
+    
+
+}
+
+.sidebar-menu .new-playlist button {
+    background-color: var(--title-color);
+    border: .0625rem solid var(--title-color);
+   
+    
+    
+}
+
+.sidebar-menu .new-playlist button > a {
+    font-size: 1.875rem;
+    color: black;
+    text-align: center;
+
+}
+
+
+
+.sidebar-menu .new-playlist a {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+.sidebar-menu .new-playlist ul li {
+    padding: .625rem;
+}
+
+.sidebar-menu .new-playlist ul a {
+    color: var(--title-color);
+    text-decoration: none;
 
 }
 
@@ -292,6 +340,32 @@ h5 + h6 {
 
 }
 
+footer {
+    height: 5rem;
+    
+    background-color: var(--bottom-color);
+}
+
+.music-playing-bar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.favourite-song {
+    width: 1.875rem;
+    height: 1.875rem;
+    display: inline-block;
+
+}
+
+.favourite-song {
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: cover;
+
+
+}
 
 
 
@@ -352,17 +426,6 @@ h5 + h6 {
 
 
 
-footer {
-    height: 5rem;
-    
-    background-color: var(--bottom-color);
-}
-
-.music-playing-bar {
-    display: flex;
-    justify-content: space-between;
-
-}
 
 
 
